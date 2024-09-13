@@ -23,6 +23,30 @@
     --width-content: 1080px;
 }
 
+.banner {
+    background: url('/images/mural-fest-2024-banner.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner header {
+    position: relative;
+    min-height: 76vh;
+    z-index: 2;
+    color: white;
+}
+
+.banner:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+
 .map-container {
     height: 300px;
 }
