@@ -24,7 +24,7 @@
 }
 
 .banner {
-    background: url('/images/mural-fest-2024-banner.jpg') no-repeat center center;
+    background: url('images/mural-fest-2024-banner.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
