@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <link rel="stylesheet" href="./style.css">
+
+    <meta charset="utf-8">
+    <meta name="description" content="My description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Mural Fest 2024
+    </title>
+</head>
+
+<body>
+<div class="banner">
+    <header>
+        <nav>
+            <a href="/">
+                <img alt="Logo" src="images/logo.svg" height="70">
+            </a>
+            <ul>
+                <li><a href="#murales">Actividades</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#donde">Donde</a></li>
+            </ul>
+        </nav>
+        <h1>Mural Fest 2024</h1>
+        <p>Maybe page Subheading</p>
+        <br>
+        <p>
+            <a href="#agenda">
+                <b>Ver la agenda &rarr;</b>
+            </a>
+        </p>
+    </header>
+</div>
+<main>
+    <section class="split-section">
+        <figure>
+            <img alt="Stock photo" src="images/mural.jpg">
+        </figure>
+
+        <article>
+            <h3>Section heading</h3>
+            <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Facilisis ut placerat sapien tristique scelerisque
+                suscipit cras. Per dolor blandit eros himenaeos facilisi pretium elit. Senectus nunc ut enim finibus
+                ligula. Ut tempus praesent natoque vivamus venenatis. Eget torquent risus convallis a dui felis magnis.
+                Efficitur vestibulum fames sagittis enim eleifend feugiat. Lectus blandit etiam venenatis sed enim
+                augue. Quam semper integer rutrum nam cubilia penatibus conubia lacinia.
+            </p>
+        </article>
+    </section>
+    <hr>
+    <section>
+        <header id="murales">
+            <h2>Todas las actividades</h2>
+            <p>Section Subheading</p>
+        </header>
+        <aside>
+            <img alt="Stock photo" src="images/mural-climat.jpg">
+            <h3>Mural 1</h3>
+            <p>Card content</p>
+        </aside>
+        <aside>
+            <img alt="Stock photo" src="images/mural-climat.jpg">
+            <h3>Mural 2</h3>
+            <p>Card content</p>
+        </aside>
+        <aside>
+            <img alt="Stock photo" src="images/mural-climat.jpg">
+            <h3>Mural 3</h3>
+            <p>Card content</p>
+        </aside>
+    </section>
+    <hr>
+    <section>
+        <header id="agenda">
+            <h2>Agenda</h2>
+        </header>
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>Col A</th>
+                <th>Col B</th>
+                <th>Col C</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>Row 1</td>
+                <td>Cell A1</td>
+                <td>Cell B1</td>
+                <td>Cell C1</td>
+            </tr>
+            <tr>
+                <td>Row 2</td>
+                <td>Cell A2</td>
+                <td>Cell B2</td>
+                <td>Cell C2</td>
+            </tr>
+        </table>
+    </section>
+    <hr id="donde">
+    <section class="split-section">
+        <div id="map" class="map-container"></div>
+
+        <article>
+            <h3>¿Done se hace?</h3>
+            <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Facilisis ut placerat sapien tristique scelerisque
+                suscipit cras. Per dolor blandit eros himenaeos facilisi pretium elit. Senectus nunc ut enim finibus
+                ligula. Ut tempus praesent natoque vivamus venenatis. Eget torquent risus convallis a dui felis magnis.
+                Efficitur vestibulum fames sagittis enim eleifend feugiat. Lectus blandit etiam venenatis sed enim
+                augue. Quam semper integer rutrum nam cubilia penatibus conubia lacinia.
+            </p>
+        </article>
+    </section>
+    <hr>
+    <section class="split-section">
+        <figure>
+            <img alt="Stock photo" src="images/apocapoc.jpg">
+        </figure>
+
+        <article>
+            <h3>Acerca de ApocApoc</h3>
+            <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Facilisis ut placerat sapien tristique scelerisque
+                suscipit cras. Per dolor blandit eros himenaeos facilisi pretium elit. Senectus nunc ut enim finibus
+                ligula. Ut tempus praesent natoque vivamus venenatis. Eget torquent risus convallis a dui felis magnis.
+                Efficitur vestibulum fames sagittis enim eleifend feugiat. Lectus blandit etiam venenatis sed enim
+                augue. Quam semper integer rutrum nam cubilia penatibus conubia lacinia.
+            </p>
+        </article>
+    </section>
+</main>
+<footer>
+    <hr>
+    <p>
+        <small>Contact info</small>
+    </p>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+<script src="/index.js"></script>
+</body>
+</html>

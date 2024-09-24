@@ -24,16 +24,26 @@
 }
 
 .banner {
-    background: url('images/mural-fest-2024-banner.jpg') no-repeat center center;
+    background: url('/images/mural-fest-2024-banner.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
 
 .banner header {
     position: relative;
-    min-height: 76vh;
+    min-height: 86vh;
     z-index: 2;
-    color: white;
+    max-width: none;
+    padding: 0;
+}
+
+.nav-container {
+    background: white;
+}
+
+.banner nav {
+    margin: 0 auto 10rem auto;
+    max-width: var(--width-content);
 }
 
 .banner:before {
@@ -43,8 +53,12 @@
     width: 100%;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(255, 255, 255, .6);
     z-index: 1;
+}
+
+.home-button img {
+    margin: 0;
 }
 
 .map-container {
