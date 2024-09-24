@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
     --active-brightness: 0.85;
     --border-radius: 5px;
@@ -21,6 +24,29 @@
     --width-card-medium: 460px;
     --width-card-wide: 800px;
     --width-content: 1080px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2rem;
 }
 
 .banner {
@@ -62,6 +88,22 @@
 }
 
 .map-container {
+    height: 300px;
+}
+
+.activities aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.activities figure {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+.split-section .map-container {
+    width: 100%;
     height: 300px;
 }
 
