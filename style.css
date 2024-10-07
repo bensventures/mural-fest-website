@@ -343,6 +343,7 @@ footer {
 footer section aside, footer section aside:hover {
     border: 0;
     box-shadow: none;
+    background: transparent;
 }
 
 footer a, footer a:visited {
