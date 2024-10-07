@@ -24,7 +24,11 @@
         <div class="nav-container">
             <nav>
                 <a class="home-button" href="/">
-                    <img alt="Logo" src="/images/logo-text.svg" height="100">
+                    <picture>
+                        <source srcset="/images/logo-text.svg" media="(prefers-color-scheme: light)"/>
+                        <source srcset="/images/logo-text-bg-dark.svg"  media="(prefers-color-scheme: dark)"/>
+                        <img alt="Logo" src="/images/logo-text.svg" height="100">
+                    </picture>
                 </a>
                 <ul>
                     <li><a href="#murales">Actividades</a></li>
@@ -43,7 +47,7 @@
             </nav>
         </div>
         <h1>Mural Fest 2024</h1>
-        <h2>El festival de los “murales” en Barcelona<br>25, 26, 27 de octubre 2024</h2>
+        <h2>El festival nacional de los “murales”<br>25, 26, 27 de octubre 2024 en Barcelona</h2>
         <br>
         <p>
             <a href="https://forms.gle/89kVfjtSy9KmEq6n8" target="_blank">
@@ -104,16 +108,16 @@
                 cerebro y nuestro comportamiento.
             </p>
         </aside>
-        <aside>
-            <figure>
-                <img alt="El Mural de la biodiversidad" src="/images/logo-biodiv.png">
-            </figure>
-            <h3>El Mural de la biodiversidad</h3>
-            <p>
-                Descubre el aspecto sistémico de la pérdida de la biodiversidad a través de un taller lúdico y
-                colaborativo: lo qué es la biodiversidad, lo qué permite y lo qué la degrada.
-            </p>
-        </aside>
+<!--        <aside>-->
+<!--            <figure>-->
+<!--                <img alt="El Mural de la biodiversidad" src="/images/logo-biodiv.png">-->
+<!--            </figure>-->
+<!--            <h3>El Mural de la biodiversidad</h3>-->
+<!--            <p>-->
+<!--                Descubre el aspecto sistémico de la pérdida de la biodiversidad a través de un taller lúdico y-->
+<!--                colaborativo: lo qué es la biodiversidad, lo qué permite y lo qué la degrada.-->
+<!--            </p>-->
+<!--        </aside>-->
         <aside>
             <figure>
                 <img alt="Mural de lo Digital" src="/images/logo-FDN.png">
@@ -131,8 +135,7 @@
             </figure>
             <h3>Adaptación al cambio climático</h3>
             <p>
-                Frente al cambio climático, existen estrategias de mitigación y de adaptación. El taller
-                Adaptación al Cambio Climático se centra en la adaptación Propone una metodología para
+                El taller Adaptación al Cambio Climático se centra en la adaptación Propone una metodología para
                 entender los componentes de un riesgo y proporciona las claves para elegir colectivamente
                 las mejores opciones posibles y evitar la inadaptación
             </p>
@@ -152,7 +155,7 @@
         </aside>
         <aside>
             <figure>
-                <img alt="Mural del Textil" src="/images/logo-textile.png">
+                <img alt="Mural del Textil" src="/images/logo-textile.jpg">
             </figure>
             <h3>Mural del Textil</h3>
             <p>
@@ -191,15 +194,53 @@
                 sobre tu huella de carbono y la del mundo para alcanzar este objetivo de 2 toneladas.
             </p>
         </aside>
-<!--        <aside>-->
-<!--            <figure>-->
-<!--                <img alt="Taller de los Suelos Vivos" src="/images/logo-biodiv.png">-->
-<!--            </figure>-->
-<!--            <h3>Taller de los Suelos Vivos</h3>-->
-<!--            <p>-->
-
-<!--            </p>-->
-<!--        </aside>-->
+        <aside>
+            <figure>
+                <img alt="Mural del Suelo" src="/images/logo-biodiv.png">
+            </figure>
+            <h3>Mural del Suelo</h3>
+            <p>
+                Mural para descubrir nuestros suelos, unos ecosistemas vitales para nuestras sociedades,
+                y fundamentales para crear futuros deseables. ¿Qué es un suelo? ¿Cómo funciona?
+                ¿Qué funciones y servicios provee? El Mural genera un lenguaje común para empoderarse y
+                poder preservar los suelos.
+            </p>
+        </aside>
+        <aside>
+            <figure>
+                <img alt="Mural de la construcción" src="/images/logo-biodiv.png">
+            </figure>
+            <h3>Mural de la construcción</h3>
+            <p>
+                Abordar el reto de la sostenibilidad y de la descarbonización del sector de la construcción
+                en equipo de forma efectiva y creativa. Explorar los impactos de la construcción para
+                poder luego imaginar soluciones de futuro.
+            </p>
+        </aside>
+        <aside>
+            <figure>
+                <img alt="Mural de la movilidad" src="/images/logo-biodiv.png">
+            </figure>
+            <h3>Mural de la movilidad</h3>
+            <p>
+                Mural dedicado a la descarbonización de la movilidad de las personas. Identificar
+                necesidades de transporte, conocer las emisiones de los distintos medios de transporte
+                y sus impactos ambientales, y finalmente explorar soluciones viables y prácticas para
+                nuestras realidades cotidianas.
+            </p>
+        </aside>
+        <aside>
+            <figure>
+                <img alt="The Conscious Evolution Collage" src="/images/logo-conscious.jpg">
+            </figure>
+            <h3>The Conscious Evolution Collage</h3>
+            <p>
+                The Conscious Evolution Collage workshop brings to life how all these global
+                issues are interconnected and explores the deeper psychological roots that are
+                causing these issues. Join us for a 3-hour card game based around
+                collective understanding and knowledge sharing.
+            </p>
+        </aside>
     </section>
     <hr>
     <section>
@@ -217,7 +258,7 @@
                     <dt>
                         17:00 - 18:00
                     </dt>
-                    <dd>
+                    <dd class="other">
                         <span class="island">Otro</span>
                         <span class="name">Actividad con el cuerpo</span>
                     </dd>
@@ -225,60 +266,67 @@
                     <dt>
                         18:00 - 21:00
                     </dt>
-                    <dd>
+                    <dd class="sensi">
                         <span class="island">Sensibilización cambio climático</span>
                         <span class="name">Mural del Clima</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES / CAT / EN / FR</span>
                     </dd>
-                    <dd>
+                    <dd class="adapt">
                         <span class="island">Mitigación/Adaptación cambio climático</span>
                         <span class="name">Adaptación al cambio climático</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES</span>
                         <span class="speaker">Gabriel Gauducheau y Thomas Pentecouteau</span>
                     </dd>
-                    <dd>
+                    <dd class="eco">
                         <span class="island">Ecosistemas</span>
                         <span class="name">Mural del Agua</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES</span>
                         <span class="speaker">lexia Michel</span>
                     </dd>
-                    <dd>
+                    <dd class="sect">
                         <span class="island">Sectores</span>
                         <span class="name">Mural Agri'Alim</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES</span>
                         <span class="speaker">Rodrigo Alonso</span>
                     </dd>
-                    <dd>
+                    <dd class="sect">
                         <span class="island">Sectores</span>
                         <span class="name">Mural de la Economía Circular</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES</span>
                         <span class="speaker">Valérie Ménard y Louise Briot</span>
                     </dd>
-                    <dd>
+                    <dd class="imagi">
                         <span class="island">Imaginarios</span>
                         <span class="name">Mural de los Nuevos Relatos</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES</span>
                         <span class="speaker">Marie Mélinon y Tshin Ilya Chardayre</span>
                     </dd>
-                    <dd>
+                    <dd class="imagi">
                         <span class="island">Imaginarios</span>
                         <span class="name">Conscious Evolution Collage</span>
                         <span class="type">Taller</span>
                         <span class="lang">EN</span>
                         <span class="speaker">Marla Lise</span>
                     </dd>
-                    <dd>
+                    <dd class="online">
                         <span class="island">En línea</span>
                         <span class="name">Mural de la Construcción</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES</span>
                         <span class="speaker">Stéphane K</span>
+                    </dd>
+                    <dd class="online">
+                        <span class="island">En línea</span>
+                        <span class="name">Mural de la Economia Circular</span>
+                        <span class="type">Taller</span>
+                        <span class="lang">ES</span>
+                        <span class="speaker">Guxtavo</span>
                     </dd>
 
                     <dt>
@@ -299,71 +347,80 @@
                     <dt>
                         10:00 - 11:00
                     </dt>
-                    <dd>
+                    <dd class="other">
                         <span class="island">Otro</span>
                         <span class="name">Actividad con el cuerpo</span>
                     </dd>
-                    <dd>
+                    <dd class="sensi">
                         <span class="island">Sensibilización cambio climático</span>
                         <span class="name">Charla inspiracional</span>
                     </dd>
 
                     <dt>
-                        11:00 - 14:00
+                        11:00 - 13:00
                     </dt>
-                    <dd>
-                        <span class="island">Otro</span>
-                        <span class="name">Briefing de formación MDC</span>
-                        <span class="type">Formación</span>
-                        <span class="lang">ES</span>
-                    </dd>
-                    <dd>
-                        <span class="island">Sensibilización cambio climático</span>
-                        <span class="name">Mural del Clima</span>
-                        <span class="type">Taller</span>
-                        <span class="lang">ES / CAT / EN / FR</span>
-                    </dd>
-                    <dd>
+                    <dd class="adapt">
                         <span class="island">Mitigación/Adaptación cambio climático	</span>
                         <span class="name">Inventamos nuestras vidas bajas en carbono</span>
                         <span class="type">Familia (Adultos + Niños)</span>
                         <span class="lang">ES / FR</span>
                         <span class="speaker">Judith Bel</span>
                     </dd>
-                    <dd>
+
+                    <dt>
+                        12:00 - 13:00
+                    </dt>
+                    <dd class="other">
+                        <span class="island">Otro</span>
+                        <span class="name">An introduction to creating psychological safety</span>
+                        <span class="type">Taller</span>
+                        <span class="lang">EN</span>
+                        <span class="speaker">Ciaran Armstrong</span>
+                    </dd>
+
+                    <dt>
+                        11:00 - 14:00
+                    </dt>
+                    <dd class="sensi">
+                        <span class="island">Sensibilización cambio climático</span>
+                        <span class="name">Mural del Clima</span>
+                        <span class="type">Taller</span>
+                        <span class="lang">ES / CAT / EN / FR</span>
+                    </dd>
+                    <dd class="adapt">
                         <span class="island">Mitigación/Adaptación cambio climático	</span>
                         <span class="name">2tonnes</span>
                         <span class="lang">ES</span>
                         <span class="speaker">Lionel Raybaud y Robin Delebecque</span>
                     </dd>
-                    <dd>
+                    <dd class="eco">
                         <span class="island">Ecosistemas</span>
-                        <span class="name">Taller de los Suelos Vivos</span>
+                        <span class="name">Mural de los suelos vivos</span>
                         <span class="type">Taller</span>
                         <span class="lang">EN</span>
                         <span class="speaker">Evelyn FitzHerbert</span>
                     </dd>
-                    <dd>
+                    <dd class="sect">
                         <span class="island">Sectores</span>
                         <span class="name">Mural de lo Digital</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES / EN</span>
                         <span class="speaker">Claudia Niku-Lari y María Cortes / Antoine Demeestère y Manuela Procopio</span>
                     </dd>
-                    <dd>
+                    <dd class="sect">
                         <span class="island">Sectores</span>
                         <span class="name">Mural del Textil</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES</span>
                     </dd>
-                    <dd>
+                    <dd class="imagi">
                         <span class="island">Imaginarios</span>
                         <span class="name">Calendario Negociados</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES</span>
                         <span class="speaker">Thomas Pentecouteau</span>
                     </dd>
-                    <dd>
+                    <dd class="online">
                         <span class="island">En línea</span>
                         <span class="name">Mural del Clima</span>
                         <span class="type">Taller</span>
@@ -381,11 +438,11 @@
                     <dt>
                         15:00 - 16:00
                     </dt>
-                    <dd>
+                    <dd class="other">
                         <span class="island">Otro</span>
                         <span class="name">Actividad con el cuerpo</span>
                     </dd>
-                    <dd>
+                    <dd class="sensi">
                         <span class="island">Sensibilización cambio climático</span>
                         <span class="name">Charla inspiracional</span>
                     </dd>
@@ -393,16 +450,23 @@
                     <dt>
                         16:00 - 19:00
                     </dt>
-                    <dd>
+                    <dd class="other">
                         <span class="island">Otro</span>
                         <span class="name">Los Maravillosos 2030 entre Muralistas</span>
                         <span class="speaker">Ombeline Dequidt y Robin Delebecque</span>
                     </dd>
-                    <dd>
+                    <dd class="sensi">
                         <span class="island">Sensibilización cambio climático</span>
                         <span class="name">Mural del Clima</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES / CAT / EN / FR</span>
+                    </dd>
+                    <dd class="online">
+                        <span class="island">En línea</span>
+                        <span class="name">Mural del Suelo</span>
+                        <span class="type">Taller</span>
+                        <span class="lang">ES</span>
+                        <span class="speaker">Stéphane K</span>
                     </dd>
 
                     <dt>
@@ -423,60 +487,71 @@
                     <dt>
                         10:00 - 11:00
                     </dt>
-                    <dd>
+                    <dd class="other">
                         <span class="island">Otro</span>
                         <span class="name">Mesa redonda inspiradora</span>
                         <span class="lang">ES o CAT</span>
                     </dd>
-                    <dd>
+                    <dd class="sensi">
                         <span class="island">Sensibilización cambio climático</span>
                         <span class="name">Actividad con el cuerpo</span>
                     </dd>
 
                     <dt>
+                        11:00 - 12:00
+                    </dt>
+                    <dd class="sensi">
+                        <span class="island">Sensibilización cambio climático</span>
+                        <span class="name">Sustainable Pathways The Game</span>
+                        <span class="type">Taller</span>
+                        <span class="lang">EN</span>
+                        <span class="speaker">Ciaran Armstrong</span>
+                    </dd>
+
+                    <dt>
                         11:00 - 14:00
                     </dt>
-                    <dd>
+                    <dd class="sensi">
                         <span class="island">Sensibilización cambio climático</span>
                         <span class="name">Mural del Clima</span>
                         <span class="type">Formación</span>
                         <span class="lang">ES / CAT / EN / FR</span>
                     </dd>
-                    <dd>
+                    <dd class="sensi">
                         <span class="island">Sensibilización cambio climático</span>
                         <span class="name">Mural del Clima</span>
                         <span class="type">Taller Adultos / Niños</span>
                         <span class="lang">ES / CAT / EN / FR</span>
                     </dd>
-                    <dd>
+                    <dd class="adapt">
                         <span class="island">Mitigación/Adaptación cambio climático</span>
                         <span class="name">Adaptación al cambio climático</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES</span>
                         <span class="speaker">Marie Mélinon y Ségolène Daval-Frérot</span>
                     </dd>
-                    <dd>
+                    <dd class="eco">
                         <span class="island">Ecosistemas</span>
                         <span class="name">Ocean Collage</span>
                         <span class="type">Taller</span>
                         <span class="lang">EN</span>
                         <span class="speaker">Lionel Raybaud</span>
                     </dd>
-                    <dd>
+                    <dd class="sect">
                         <span class="island">Sectores</span>
                         <span class="name">Mural del Textil</span>
                         <span class="type">Formación</span>
                         <span class="lang">ES</span>
                         <span class="speaker">Ombeline Dequidt</span>
                     </dd>
-                    <dd>
+                    <dd class="imagi">
                         <span class="island">Imaginarios</span>
                         <span class="name">Los Maravillosos 2030</span>
                         <span class="type">Taller</span>
                         <span class="lang">ES</span>
                         <span class="speaker">Tshin Ilya Chardayre</span>
                     </dd>
-                    <dd>
+                    <dd class="online">
                         <span class="island">En línea</span>
                         <span class="name">Mural de la Movilidad</span>
                         <span class="type">Taller</span>
