@@ -173,11 +173,13 @@ section aside:hover {
 .tabs label {
     width: 33.33%;
     border-bottom: 5px solid var(--color-bg-secondary);
-    padding-bottom: .5rem;
+    padding: .5rem 0 .5rem 0;
     text-align: center;
     cursor: pointer;
-    position: sticky;
-    top: 0;
+    background: var(--color-bg);
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 2;
 }
 
 .tabs .tab-content {
@@ -194,7 +196,7 @@ section aside:hover {
     background: var(--color-bg-secondary);
     padding: .25rem;
     position: sticky;
-    top: 0;
+    top: 45px;
     z-index: 2;
 }
 
