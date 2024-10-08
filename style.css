@@ -40,9 +40,9 @@
     :root {
         --color-accent: #0090ff;
         --color-bg: #2a2c3a;
-        --color-bg-secondary: #3a3a3a;
+        --color-bg-secondary: #1f2533;
         --color-bg-cards: #32343f;
-        --color-bg-img: #dcdcdc;
+        --color-bg-img: #f1f1f1;
         --color-link: #118bee;
         --color-secondary: #f98757;
         --color-secondary-accent: #faa301;
@@ -142,6 +142,33 @@ section aside:hover {
     margin: 0;
 }
 
+.presentation {
+    background: url('/images/art-2.svg') no-repeat -50px -50px;
+    background-size: 700px 700px;
+    overflow: visible;
+    padding: 100px 0 200px 200px;
+    margin: -100px 0 -200px -200px;
+}
+
+.presentation + hr {
+    background: transparent;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+}
+
+.art-separator {
+    position: relative;
+    background: url('/images/art-pattern.svg') repeat;
+    background-size: contain;
+    height: 400px;
+    opacity: .6;
+    margin: -350px 0 0 0;
+    z-index: 1;
+}
+
 .map-container {
     height: 300px;
 }
@@ -156,6 +183,8 @@ section aside:hover {
     display: flex;
     align-items: center;
     background: var(--color-bg-img);
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .tabs {
@@ -173,6 +202,7 @@ section aside:hover {
 .tabs label {
     width: 33.33%;
     border-bottom: 5px solid var(--color-bg-secondary);
+    margin-top: 5px solid var(--color-bg);
     padding: .5rem 0 .5rem 0;
     text-align: center;
     cursor: pointer;
@@ -180,6 +210,33 @@ section aside:hover {
     position: sticky !important;
     top: 0 !important;
     z-index: 2;
+}
+
+.tabs input:checked + label {
+    font-weight: 600;
+    border-bottom-color: transparent;
+}
+
+.tabs input:checked + label:after {
+    content: '';
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    height: 5px;
+    background: var(--color-accent);
+}
+
+.tabs .day {
+    display: block;
+    font-size: 1.318rem;
+}
+
+.tabs .date {
+    font-size: 2rem;
+    display: none;
 }
 
 .tabs .tab-content {
@@ -196,8 +253,10 @@ section aside:hover {
     background: var(--color-bg-secondary);
     padding: .25rem;
     position: sticky;
-    top: 45px;
+    top: 52px;
     z-index: 2;
+    font-size: 1.618rem;
+    border-radius: 0 var(--border-radius) var(--border-radius) var(--border-radius);
 }
 
 .tab-content dt:first-child {
@@ -206,9 +265,8 @@ section aside:hover {
 
 .tab-content dd {
     margin: 0 0 .75rem 0;
-    padding-bottom: .75rem;
+    padding: .75rem 1rem;
     border-bottom: 1px solid var(--color-bg-secondary);
-    padding-left: 1rem;
     position: relative;
     z-index: 1;
 }
@@ -251,10 +309,12 @@ section aside:hover {
 }
 
 .tab-content .island {
-    font-size: .9rem;
+    font-size: .7rem;
     color: var(--color-accent);
     display: block;
     margin-bottom: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .tab-content .name {
@@ -267,13 +327,8 @@ section aside:hover {
 }
 
 .tab-content .speaker {
-    display: block;
+    display: none;
     font-size: 0.8rem;
-}
-
-.tabs input:checked + label {
-    font-weight: 600;
-    border-color: var(--color-accent);
 }
 
 .tabs input:checked + label + .tab-content {
