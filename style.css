@@ -185,6 +185,11 @@ main {
     background: var(--color-bg-img);
     border-radius: var(--border-radius);
     overflow: hidden;
+    min-height: 150px;
+}
+
+.activities figure.bg-dark {
+    background: #333;
 }
 
 .tabs {
