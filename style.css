@@ -42,7 +42,7 @@
         --color-bg: #2a2c3a;
         --color-bg-secondary: #1f2533;
         --color-bg-cards: #32343f;
-        --color-bg-img: #f1f1f1;
+        --color-bg-img: #fff;
         --color-link: #118bee;
         --color-secondary: #f98757;
         --color-secondary-accent: #faa301;
@@ -185,6 +185,7 @@ main {
     background: var(--color-bg-img);
     border-radius: var(--border-radius);
     overflow: hidden;
+    max-height: 250px;
     min-height: 150px;
 }
 
