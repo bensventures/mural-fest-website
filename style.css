@@ -337,6 +337,12 @@ main {
     font-size: 0.8rem;
 }
 
+.tab-content .table {
+    display: block;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
 .tabs input:checked + label + .tab-content {
     display: block;
 }
