@@ -104,7 +104,7 @@ section aside:hover {
     ), url('/images/mural-fest-2024-banner.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
-    color: #ececec;
+    color: black;
 }
 
 .banner h1 {
