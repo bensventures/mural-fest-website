@@ -99,12 +99,12 @@ section aside:hover {
 
 .banner {
     background: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.4)
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.4)
     ), url('/images/mural-fest-2024-banner.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
-    color: #06434e;
+    color: var(--color-text);
 }
 
 .banner h1 {
@@ -438,4 +438,34 @@ footer a, footer a:visited {
         flex: 0 0 50%;
         height: 300px;
     }
+}
+
+
+
+@media (max-width: 768px) {
+  /* prevent the nav menu to wrap below the logo */ 
+  nav {
+    flex-wrap: nowrap !important;
+  }
+
+  /* hide expandable menu */
+  li:not(:focus) > ul {
+      display:none !important;
+  }
+  nav ul li ul {
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) {
+  /* position expandable menu (language selection) on right border to keep it inside the window */
+  nav ul li ul {
+    left: auto !important;
+    right: 0 !important;
+  }
+}
+
+/* expand menu on focus (on only on hover for touch screens) */
+li:focus > ul {
+    display: block !important;
 }
