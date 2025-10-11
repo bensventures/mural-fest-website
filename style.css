@@ -449,7 +449,7 @@ footer a, footer a:visited {
   }
 
   /* hide expandable menu */
-  li:not(:focus) > ul {
+  li:not(:focus-within) > ul{
       display:none !important;
   }
   nav ul li ul {
