@@ -469,3 +469,30 @@ footer a, footer a:visited {
 li:focus > ul {
     display: block !important;
 }
+
+.calendario-negociado, 
+.conscious-evolucion-collage, 
+.creating-psychological-safety, 
+.los-maravillosos-2030, 
+.make-it-awkward, 
+.mural-agri-alim, 
+.mural-biodiversidad, 
+.mural-construccion, 
+.mural-suelo, 
+.mural-digital, 
+.mural-movilidad, 
+.sustainable-pathways, 
+.taller-adacc
+{
+  display: none !important;
+}
+
+.mural-textil, 
+.mural-nuevos-relatos, 
+.mural-economia-circular,
+.mural-clima, 
+.mural-oceano, 
+.taller-2toneladas, 
+.taller-invbc,
+{
+}
