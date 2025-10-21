@@ -10,3 +10,19 @@ document.addEventListener('DOMContentLoaded', function() {
     .bindPopup('ApocApoc - Nest City Lab')
     .openPopup();
 });
+
+
+function startTime() {
+  const diff = new Date(new Date(2025, 11, 14, 17) - new Date());
+  if (diff < 0) return false;
+  let d = diff.getDate();
+  let h = diff.getHours();
+  let m = diff.getMinutes();
+  let s = diff.getSeconds();
+  h = (h < 10 ? "0" + h : h);
+  m = (m < 10 ? "0" + m : m);
+  s = (s < 10 ? "0" + s : s);
+  document.getElementById("counter-time").innerHTML =  d + "d " + h + "h " + m + "m " + s + "s";
+  setTimeout(startTime, 1000);
+  return true;
+}

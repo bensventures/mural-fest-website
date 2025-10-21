@@ -68,6 +68,10 @@
         </p>
     </header>
 </div>
+<div id="counter">
+    <div id="counter-before"></div>
+    <div id="counter-time"></div>
+</div>
 <main>
     <section class="split-section presentation">
         <figure>
@@ -464,6 +468,11 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
-<script src="/index.js"></script>
+<script src="index.js"></script>
+<script>
+    if (startTime()) {
+        document.getElementById("counter-before").innerHTML = "Empezamos en ";
+    }
+</script>
 </body>
 </html>

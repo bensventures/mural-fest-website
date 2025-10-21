@@ -65,6 +65,10 @@
         </p>
     </header>
 </div>
+<div id="counter">
+    <div id="counter-before"></div>
+    <div id="counter-time"></div>
+</div>
 <main>
     <section class="split-section presentation">
         <figure>
@@ -428,5 +432,10 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
 <script src="/index.js"></script>
+<script>
+    if (startTime()) {
+        document.getElementById("counter-before").innerHTML = "Starting in ";
+    }
+</script>
 </body>
 </html>
