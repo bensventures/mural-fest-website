@@ -489,15 +489,16 @@ li:focus > ul {
   display: none !important;
 }
 
-.mural-textil, 
-.mural-nuevos-relatos, 
+.mural-clima, 
 .mural-economia-circular,
 .mural-finanzas,
-.mural-clima, 
+.mural-limites-planetarios,
+.mural-nuevos-relatos, 
 .mural-oceano, 
+.mural-textil, 
 .taller-2toneladas, 
 .taller-invbc,
-.taller-suelos-vivos,
+.taller-suelos-vivos
 {
 }
 
