@@ -478,7 +478,6 @@ li:focus > ul {
 .los-maravillosos-2030, 
 .make-it-awkward, 
 .mural-agri-alim, 
-.mural-biodiversidad, 
 .mural-construccion, 
 .mural-digital, 
 .mural-movilidad, 
@@ -489,6 +488,7 @@ li:focus > ul {
   display: none !important;
 }
 
+.mural-biodiversidad,
 .mural-clima, 
 .mural-economia-circular,
 .mural-finanzas,
