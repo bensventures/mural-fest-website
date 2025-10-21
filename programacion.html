@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" href="images/logos/logo.svg">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="canonical" href="https://www.muralfest.es/">
+
+    <meta charset="utf-8">
+    <meta name="description" content="Programación del Mural Fest, el festival nacional de los talleres de concienciación medioambiental - los 14, 15, 16 de noviembre 2025 en Barcelona">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Mural Fest 2025
+    </title>
+
+
+    <meta property="og:title" content="Mural Fest 2025" />
+    <meta property="og:type" content="event" />
+    <meta property="og:description" content="Programación del Mural Fest, el festival nacional de los talleres de concienciación medioambiental - los 14, 15, 16 de noviembre 2025 en Barcelona">
+    <meta property="og:image" content="https://www.muralfest.es/images/thumbnail-photo.webp">
+    <meta property="og:logo" content="https://www.muralfest.es/images/logos/logo-text.svg" />
+    <meta property="og:url" content="https://www.muralfest.es/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+<div class="banner">
+    <header>
+        <div class="nav-container">
+            <nav>
+                <a class="home-button" href="/">
+                    <picture>
+                        <source srcset="images/logos/logo-text.svg" media="(prefers-color-scheme: light)"/>
+                        <source srcset="images/logos/logo-text-bg-dark.svg"  media="(prefers-color-scheme: dark)"/>
+                        <img alt="Logo" src="images/logos/logo-text.svg" height="100">
+                    </picture>
+                </a>
+                <ul>
+                    <li><a href="/#murales">Actividades</a></li>
+                    <li><a href="/#donde">Dónde</a></li>
+                    <li><a href="galeria">Galería 2024</a></li>
+                    <li tabindex="0">
+                        ES ⏷
+                        <ul>
+                            <li tabindex="1">
+                                <a href="/cat">CAT</a>
+                            </li>
+                            <li tabindex="2">
+                                <a href="/en">EN</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Programación</h1>
+    </header>
+</div>
+<main class="lineup">
+
+<style>
+    .lineup-feature:nth-of-type(3n) { background-color: #009393; color: white;}
+    .lineup-feature:nth-of-type(3n + 1) { background-color: peachpuff;}
+    .lineup-feature:nth-of-type(3n + 2) { background-color: #0090ff;}
+
+    .lineup-feature {
+        display: flex;
+        padding: 5px;
+        border-radius: 10px;
+        color: black;
+        margin-bottom: 3px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+    h4 {
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+
+    .lineup-feature p {
+        margin: 0;
+    }
+
+    .lineup-feature .img-container {
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 10px;
+        overflow: clip;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+    }
+
+    .lineup-feature img {
+        max-width: 100%;
+        max-height: 5em;
+        margin: auto;
+        object-fit: contain;
+    }
+
+    .lineup-feature .description {
+        margin: auto 10px;
+    }
+
+    p:lang(en), p:lang(ca) {
+        display: none;
+    }
+</style>
+
+<div id="lineup"></div>
+
+</main>
+<hr class="art-separator">
+<footer>
+    <section>
+        <aside>
+            <h4>
+                Contact
+            </h4>
+            <p>
+                <a href="mailto:hola@muralfest.es">hola@muralfest.es</a>
+            </p>
+        </aside>
+        <aside>
+            <h4>
+                Síguenos
+            </h4>
+            <p>
+                <a href="https://www.instagram.com/muralfest_es/" class="link-icon">
+                    <img alt="instagram" src="images/instagram.svg" height="25">
+                    @muralfest_es
+                </a>
+            </p>
+        </aside>
+        <aside>
+
+        </aside>
+    </section>
+</footer>
+
+<script>
+    var id = '1cVXH7X9kyEr-RlpKl5GWRv6VzUuiW8AWVNRCYlgmHes';
+    var gid = '0';
+    var url = 'https://docs.google.com/spreadsheets/d/'+id+'/gviz/tq?tqx=out:json&tq&gid='+gid;
+    fetch(url)
+      .then(response => response.text())
+      .then(data => document.getElementById("lineup").innerHTML=myItems(data.substring(47).slice(0, -2))  
+      );
+
+    document.getElementById("lineup").innerHTML=myItems(JSON.stringify(jsonString));
+
+    function myItems(jsonString){
+        var json = JSON.parse(jsonString);
+        var contents = '';
+        var ptime = '';
+        var pdate = '';
+
+        json.table.rows.sort((a, b) => (( a.c[3].v == b.c[3].v) ? (a.c[5].v > b.c[5].v) : (a.c[3].v > b.c[3].v)));
+
+        json.table.rows.forEach(line => {
+        var name = (line.c[0] != null ? line.c[0].v : "");
+        var pict = (line.c[1] != null ? line.c[1].v : "");
+        var conf = (line.c[2] != null ? line.c[2].v : "");
+        var date = (line.c[3] != null ? line.c[3].v : "");
+        var lang = (line.c[4] != null ? line.c[4].v : "");
+        var time = (line.c[5] != null ? line.c[5].v : "");
+        var durt = (line.c[6] != null ? line.c[6].v : "");
+
+        if (pict != "") var _img = `<img src="images/logos/` + pict + `">`;
+        else _img = ``;
+
+        if (conf) {
+
+            if (date != pdate) {
+                contents += `<h2>` + (pdate = date) + `</h2>`;
+            }
+            if (time != ptime) {
+                contents += `<h3>` + (ptime = time) + `</h3>`;
+            }
+
+            contents = contents 
+                + `<div class="lineup-feature"><div class="img-container">`
+                + _img
+                + `</div><div class="description"><h4>`
+                + name
+                + `</h4><p>Idioma:`
+                + lang
+                + `</p><p>Duración:` 
+                + durt
+                + `</p></div></div>`;
+            }
+        })
+      return contents;
+  }
+
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+<script src="/index.js"></script>
+</body>
+</html>
