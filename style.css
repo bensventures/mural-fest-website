@@ -97,6 +97,11 @@ section aside:hover {
     box-shadow: var(--box-shadow) var(--color-shadow);
 }
 
+section aside figure img {
+    margin: auto;
+}
+
+
 .link-icon {
     display: flex;
     align-items: center;

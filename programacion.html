@@ -28,17 +28,25 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <style>
-        .lineup-feature:nth-of-type(3n) { background-color: #009393; color: white;}
-        .lineup-feature:nth-of-type(3n + 1) { background-color: peachpuff;}
-        .lineup-feature:nth-of-type(3n + 2) { background-color: #0090ff; color: white;}
+/*        .lineup-feature:nth-of-type(3n) { background-color: #009393; color: white;}*/
+/*        .lineup-feature:nth-of-type(3n + 1) { background-color: peachpuff;}*/
+/*        .lineup-feature:nth-of-type(3n + 2) { background-color: #0090ff; color: white;}*/
+
+        
 
         .lineup-feature {
             display: flex;
             padding: 5px;
             border-radius: 10px;
             color: black;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            background-color: #e7e7e7;
         }
+
+        .workshop { background-color: #9cccf4; }
+        .short { background-color: #009393; color: white;}
+        .family { background-color: #fbb699; }
+        .workshop:nth-of-type(2n + 1) { background-color: #74a5f2;}
 
         h2 {
             text-align: center;
@@ -54,7 +62,7 @@
             margin: 0;
         }
 
-        #lineup > div {
+        .lineup > div {
             margin-bottom: 50px;
         }
 
@@ -93,6 +101,10 @@
         .gettickets img {
             display:inline-block;width:2em;
             margin-right: 1em;
+        }
+
+        main {
+            background-color: var(--color-bg);
         }
 
     </style>
@@ -210,6 +222,7 @@
                 var lang = (line.c[4] != null ? line.c[4].v : "");
                 var time = (line.c[5] != null ? line.c[5].v : "");
                 var durt = (line.c[6] != null ? line.c[6].v : "");
+                var type = (line.c[7] != null ? line.c[7].v : "");
 
                 if (conf) {
 
@@ -220,7 +233,7 @@
                     }
 
                     contents = contents 
-                    + `<div class="lineup-feature">`
+                    + `<div class="lineup-feature ` + type + `">`
                     + `<div class="img-container">`
                     +  (pict != "" ? `<img src="images/logos/` + pict + `">` : ``)
                     + `</div><div class="description">`
