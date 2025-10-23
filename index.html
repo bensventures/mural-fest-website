@@ -5,8 +5,8 @@
     <link rel="icon" href="/images/logos/logo.svg">
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-          crossorigin=""/>
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
     <link rel="stylesheet" href="./style.css">
     <link rel="canonical" href="https://www.muralfest.es/">
 
@@ -29,468 +29,487 @@
 </head>
 
 <body>
-<div class="banner">
-    <header>
-        <div class="nav-container">
-            <nav>
-                <a class="home-button" href="/">
-                    <picture>
-                        <source srcset="/images/logos/logo-text.svg" media="(prefers-color-scheme: light)"/>
-                        <source srcset="/images/logos/logo-text-bg-dark.svg"  media="(prefers-color-scheme: dark)"/>
-                        <img alt="Logo" src="/images/logos/logo-text.svg" height="100">
-                    </picture>
+    <div class="banner">
+        <header>
+            <div class="nav-container">
+                <nav>
+                    <a class="home-button" href="/">
+                        <picture>
+                            <source srcset="/images/logos/logo-text.svg" media="(prefers-color-scheme: light)"/>
+                            <source srcset="/images/logos/logo-text-bg-dark.svg"  media="(prefers-color-scheme: dark)"/>
+                            <img alt="Logo" src="/images/logos/logo-text.svg" height="100">
+                        </picture>
+                    </a>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="/programacion">Programación</a></li>
+                        <li><a href="/galeria">Galería 2024</a></li>
+                        <li tabindex="0">
+                            ES ⏷
+                            <ul>
+                                <li tabindex="1">
+                                    <a href="/cat">CAT</a>
+                                </li>
+                                <li tabindex="2">
+                                    <a href="/en">EN</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Mural Fest 2025</h1>
+            <h2>El festival de los talleres colaborativos y de sensibilización medioambiental y social<br>14, 15, 16 de noviembre 2025 en Barcelona</h2>
+            <br>
+            <p>
+                <a href="https://www.eventbrite.es/o/mural-fest-95581558973#events" target="_blank">
+                    <b>Reserva tu entrada →</b>
                 </a>
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="/programacion">Programación</a></li>
-                    <li><a href="/galeria">Galería 2024</a></li>
-                    <li tabindex="0">
-                        ES ⏷
-                        <ul>
-                            <li tabindex="1">
-                                <a href="/cat">CAT</a>
-                            </li>
-                            <li tabindex="2">
-                                <a href="/en">EN</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <h1>Mural Fest 2025</h1>
-        <h2>El festival de los talleres colaborativos y de sensibilización medioambiental y social<br>14, 15, 16 de noviembre 2025 en Barcelona</h2>
-        <br>
-        <p>
-            <a href="https://www.eventbrite.es/o/mural-fest-95581558973#events" target="_blank">
-                <b>Reserva tu entrada →</b>
-            </a>
-        </p>
-    </header>
-</div>
-<div id="counter">
-    <div id="counter-before"></div>
-    <div id="counter-time"></div>
-</div>
-<main>
-    <section class="split-section presentation">
-        <figure>
-            <img alt="Un taller del Mural del Clima" src="/images/mural.jpg">
-        </figure>
-
-        <article>
-            <h2>
-                ¡Volvemos para una nueva edición del Mural Fest en Apocapoc, Barcelona!
-            </h2>
-            <p>
-                Una nueva oportunidad para participar en talleres de tipo “mural”, aprender sobre muchas temáticas
-                medioambientales y conocer como mejor actuar para minimizar nuestra huella ambiental en el planeta.
-                Clima, biodiversidad, téxtil, digital, nuevos imaginarios, agua, océano, economía circular, suelos
-                vivos…
             </p>
-            <p>
-                ¡Y cómo todos los festivales, no faltarán musica, fiesta, y otras actividades corporales y artísticas!
-            </p>
-            <p>
-                3 días para disfrutar, aprender, conectar con el ecosistema medioambiental de Barcelona y más allá.
-            </p>
-            <p>
-                Reserva las fechas de los 14, 15 y 16 de noviembre! ¡No te quedes sin tu plaza!
-            </p>
-        </article>
-    </section>
-    <hr>
-    <section class="activities">
-        <header id="murales">
-            <h2>Todas las actividades</h2>
         </header>
-        El programa completo todavía está por definir... No dudes en volver a mirarlo más tarde si no encuentras el taller que te gustaría hacer.
-        <aside class="mural-clima">
+    </div>
+    <div id="counter">
+        <div id="counter-before"></div>
+        <div id="counter-time"></div>
+    </div>
+    <main>
+        <section class="split-section presentation">
             <figure>
-                <img alt="El Mural del Clima" src="/images/logos/logo-mdc.png">
+                <img alt="Un taller del Mural del Clima" src="/images/mural.jpg">
             </figure>
-            <h3>El Mural del Clima</h3>
-            <p>
-                En solo 3 horas, el taller colaborativo « El Mural del Clima » permite entender los conceptos básicos y
-                los desafíos del cambio climático, para entrar en acción.
-            </p>
-        </aside>
-        <aside class="mural-nuevos-relatos">
-            <figure>
-                <img alt="El Mural de los nuevos relatos" src="/images/logos/logo-nuevo-relatos.png">
-            </figure>
-            <h3>El Mural de los nuevos relatos</h3>
-            <p>
-                Descubre a través de un juego de cartas colaborativo cuál es la influencia de las historias en nuestro
-                cerebro y nuestro comportamiento.
-            </p>
-        </aside>
-        <aside class="mural-biodiversidad">
-            <figure>
-                <img alt="Biodiversity Collage" src="/images/logos/logo-biodiv.png">
-            </figure>
-            <h3>Biodiversity Collage</h3>
-            <p>
-                Descubre el aspecto sistémico de la pérdida de la biodiversidad a través de un taller lúdico y
-                colaborativo: lo qué es la biodiversidad, lo qué permite y lo qué la degrada.
-            </p>
-        </aside>
-        <aside class="mural-digital">
-            <figure>
-                <img alt="Mural de lo Digital" src="/images/logos/logo-digital.png">
-            </figure>
-            <h3>Mural de lo Digital</h3>
-            <p>
-                El Mural del Digital es un taller lúdico y colaborativo. El objetivo del taller es
-                sensibilizar y formar a los participantes sobre los problemas medioambientales de
-                las tecnologías digitales.
-            </p>
-        </aside>
-        <aside class="taller-adacc">
-            <figure>
-                <img alt="Adaptación al cambio climático" src="/images/logos/logo_adacc.svg">
-            </figure>
-            <h3>Adaptación al cambio climático</h3>
-            <p>
-                El taller Adaptación al Cambio Climático se centra en la adaptación Propone una metodología para
-                entender los componentes de un riesgo y proporciona las claves para elegir colectivamente
-                las mejores opciones posibles y evitar la inadaptación
-            </p>
-        </aside>
-        <aside class="mural-oceano">
-            <figure>
-                <img alt="El Mural del Océano" src="/images/logos/logo-oceane.webp">
-            </figure>
-            <h3>Ocean Collage</h3>
-            <p>
-                El taller del Mural de Océano sensibiliza sobre los problemas que
-                rodean al océano ( contaminación química y plástica,
-                industrias marítimas y cambio climático) y el impacto de nuestras
-                actividades en este ecosistema, y proporciona las claves para pasar
-                a la acción
-            </p>
-        </aside>
-        <aside class="mural-limites-planetarios">
-            <figure>
-                <img alt="El Mural de los Límites Planetarios" src="/images/logos/logo-boundaries.png">
-            </figure>
-            <h3>El Mural de los Límites Planetarios</h3>
-            <p>
-                ¿Qué hace que nuestro planeta Tierra sea habitable? El clima, la biodiversidad, el ciclo del agua... Hay tantas cuestiones medioambientales que considerar que es fácil perderse. !Descubre las 9 fronteras planetarias, para cartografíar y relacionar los principales problemas ecológicos!
-            </p>
-        </aside>
-        <aside class="los-maravillosos-2030">
-            <figure>
-                <img alt="Los Maravillosos 2030" src="/images/logos/logo-2030.png">
-            </figure>
-            <h3>Los Maravillosos 2030</h3>
-            <p>
-                Un taller sobre viajar a los 2030 maravillosos para salir de las distopías angustiantes y atrevernos a soñar con un mundo mejor.
-                Durante 2 horas y media, nos sumergiremos en un 2030 glorioso de profundas transformaciones en nuestra sociedad.
-            </p>
-        </aside>
-        <aside class="taller-invbc">
-            <figure>
-                <img alt="Inventemos Nuestras Vidas Sostenibles" src="/images/logos/logo-invbc.png">
-            </figure>
-            <h3>Inventemos Nuestras Vidas Sostenibles (INVBC)</h3>
-            <p>
-                Un taller divertido y educativo de 2 horas diseñado para ayudar a los niños a partir de
-                9 años a diseñar vidas bajas en carbono deseables, sin hacerles sentir culpables, al
-                tiempo que identifican acciones necesarias, eficaces e inspiradoras.
-            </p>
-        </aside>
-        <aside class="taller-2toneladas">
-            <figure>
-                <img alt="2tonnes" src="/images/logos/logo-2T.webp">
-            </figure>
-            <h3>2toneladas</h3>
-            <p>
-                A partir de tu huella de carbono personal y a lo largo del taller, te invitaremos a tomar
-                decisiones (transporte, alimentación, vivienda, implicación ciudadana…) que tendrán impacto
-                sobre tu huella de carbono y la del mundo para alcanzar este objetivo de 2 toneladas.
-            </p>
-        </aside>
-        <aside class="mural-suelo">
-            <figure>
-                <img alt="Mural del Suelo" src="/images/logos/logo-suelo.jpg">
-            </figure>
-            <h3>Mural del Suelo</h3>
-            <p>
-                Mural para descubrir nuestros suelos, unos ecosistemas vitales para nuestras sociedades,
-                y fundamentales para crear futuros deseables. ¿Qué es un suelo? ¿Cómo funciona?
-                ¿Qué funciones y servicios provee? El Mural genera un lenguaje común para empoderarse y
-                poder preservar los suelos.
-            </p>
-        </aside>
-        <aside class="mural-textil">
-            <figure>
-                <img alt="Mural del Textil" src="/images/logos/logo-textile.jpg">
-            </figure>
-            <h3>Mural del Textil</h3>
-            <p>
-                Taller colaborativo para entender los impactos sociales y ambientales del sector textil.
-            </p>
-        </aside>
-        <aside class="creating-psychological-safety">
-            <figure class="bg-dark">
-                <img alt="An introduction to creating psychological safety" src="/images/logos/logo-psycho.png">
-            </figure>
-            <h3>An introduction to creating psychological safety</h3>
-            <p>
-                Learn to cultivate a fearless work environment through psychological safety,
-                enhancing communication, trust, and innovation.
-            </p>
-        </aside>
-        <aside class="sustainable-pathways">
-            <figure class="bg-dark">
-                <img alt="Sustainable Pathways" src="/images/logos/logo-psycho.png">
-            </figure>
-            <h3>Sustainable Pathways: The Game</h3>
-            <p>
-                An interactive, team-based experience that inspires sustainable change,
-                from boardroom to shop floor.
-            </p>
-        </aside>
-        <aside class="mural-movilidad">
-            <figure>
-                <img alt="Mural de la movilidad" src="/images/logos/logo-mobility.jpg">
-            </figure>
-            <h3>Mural de la movilidad</h3>
-            <p>
-                Mural dedicado a la descarbonización de la movilidad de las personas. Identificar
-                necesidades de transporte, conocer las emisiones de los distintos medios de transporte
-                y sus impactos ambientales, y finalmente explorar soluciones viables y prácticas para
-                nuestras realidades cotidianas.
-            </p>
-        </aside>
-        <aside class="mural-construccion">
-            <figure>
-                <img alt="Mural de la construcción" src="/images/logos/logo-construction.png">
-            </figure>
-            <h3>Mural de la construcción</h3>
-            <p>
-                Abordar el reto de la sostenibilidad y de la descarbonización del sector de la construcción
-                en equipo de forma efectiva y creativa. Explorar los impactos de la construcción para
-                poder luego imaginar soluciones de futuro.
-            </p>
-        </aside>
-        <aside class="conscious-evolucion-collage">
-            <figure>
-                <img alt="The Conscious Evolution Collage" src="/images/logos/logo-conscious.jpg">
-            </figure>
-            <h3>The Conscious Evolution Collage</h3>
-            <p>
-                The Conscious Evolution Collage workshop brings to life how all these global
-                issues are interconnected and explores the deeper psychological roots that are
-                causing these issues. Join us for a 3-hour card game based around
-                collective understanding and knowledge sharing.
-            </p>
-        </aside>
-        <aside class="mural-economia-circular">
-            <figure>
-                <img alt="El Mural de la Economía Circular" src="/images/logos/logo-circular.jpg">
-            </figure>
-            <h3>El Mural de la Economía Circular</h3>
-            <p>
-                El Mural de la Economía Circular es un taller colaborativo que analiza nuestro modelo
-                económico (lineal) actual, sus impactos e invita a explorar un modelo circular diferente,
-                que utiliza menos recursos, diseña sin crear desperdicios y respeta los límites de nuestro
-                planeta.
-            </p>
-        </aside>
-        <aside class="calendario-negociado">
-            <figure>
-                <img alt="Calendario negociado" src="/images/logos/logo-calendario.png">
-            </figure>
-            <h3>Calendario negociado</h3>
-            <p>
-                ¿Qué pasaría si del día al otro cambiamos de calendario? ¿Y qué pasaría si teníamos la posibilidad de elaborar
-                nuestro propio calendario? ¿Con que criterios lo haríamos? Y al adoptar este nuevo calendario, ¿que cambiaría en nuestro día a día?
-                El Calendario negociado es un taller en el cual los participantes van a elaborar su propio calendario.
-            </p>
-        </aside>
-        <aside class="mural-agri-alim">
-            <figure style="background-color: #11876f">
-                <img alt="El Mural Agri&apos;Alim" src="/images/logos/logo-agrialim.jpg">
-            </figure>
-            <h3>El Mural Agri&apos;Alim</h3>
-            <p>
-                Un taller participativo de 3 horas para comprender colectivamente los retos a los que se
-                enfrenta el sistema agri-alimentario y debatir cómo abordarlos.
-            </p>
-        </aside>
-        <aside class="make-it-awkward">
-            <figure>
-                <img alt="Make It Awkward Desafía el Momento creando incomodidad" src="/images/logos/logo-makeitawkward.png">
-            </figure>
-            <h3>Make It Awkward<br>Desafía el Momento creando incomodidad</h3>
-            <p>
-                En este taller colaborativo, los participantes aprenderán a reaccionar ante comportamientos y
-                comentarios inapropiados, creando una situación incómoda de manera amable. Por ejemplo,
-                compartiendo su propio punto de vista, expresando sus valores, estableciendo límites
-                personales o invitando al orador a reconsiderar su posición.
-            </p>
-        </aside>
-        <aside class="mural-finanzas">
-            <figure>
-                <img alt="El Mural de las Finanzas" src="/images/logos/logo-finanza.png">
-            </figure>
-            <h3>El Mural de las Finanzas</h3>
-            <p>
-                La misión del Mural de las Finanzas es sensibilizar a la población sobre el papel de las finanzas en la transición socioecológica y fomentar la reflexión sobre las palancas de acción, según su escala y nivel inicial de conocimientos, y a escala colectiva.
-            </p>
-        </aside>
-        <aside class="taller-suelos-vivos">
-            <figure>
-                <img alt="El Taller de los Suelos Vivos" src="/images/logos/logo-livingsoils.png">
-            </figure>
-            <h3>El Taller de los Suelos Vivos</h3>
-            <p>
-                Hace muy poco que se ha puesto de relieve el papel fundamental del suelo en el equilibrio de los ecosistemas. Es la interfaz viva entre las plantas y los minerales, hogar de una cuarta parte de la biodiversidad conocida y refugio de vida responsable de múltiples funciones vitales. ¿Listo para sumergirte?
-            </p>
-        </aside>
-        <aside class="taller-agua">
-            <figure>
-                <img alt="El Mural del Agua" src="/images/logos/logo-agua.png">
-            </figure>
-            <h3>El Mural del Agua</h3>
-            <p>
-                Hace muy poco que se ha puesto de relieve el papel fundamental del suelo en el equilibrio de los ecosistemas. Es la interfaz viva entre las plantas y los minerales, hogar de una cuarta parte de la biodiversidad conocida y refugio de vida responsable de múltiples funciones vitales. ¿Listo para sumergirte?
-            </p>
-        </aside>
-    </section>
-</main>
-<hr class="art-separator">
-<main>
-    <hr id="donde">
-    <section class="split-section">
-        <div id="map" class="map-container"></div>
 
-        <article>
-            <h2>¿Dónde se hace?</h2>
-            <address>
-                Nest City Lab<br>
-                Carrer d'Àlaba 100,<br>
-                08018<br>
-                Barcelona
-            </address>
-            <p>
-                Metro L4 Bogatell - L1 Marina
-            </p>
-        </article>
-    </section>
-    <hr>
-    <section class="split-section">
-        <figure>
-            <img alt="Foto de Apocapoc" src="/images/apocapoc.jpg">
-        </figure>
+            <article>
+                <h2>
+                    ¡Volvemos para una nueva edición del Mural Fest en Apocapoc, Barcelona!
+                </h2>
+                <p>
+                    Una nueva oportunidad para participar en talleres de tipo “mural”, aprender sobre muchas temáticas
+                    medioambientales y conocer como mejor actuar para minimizar nuestra huella ambiental en el planeta.
+                    Clima, biodiversidad, téxtil, digital, nuevos imaginarios, agua, océano, economía circular, suelos
+                    vivos…
+                </p>
+                <p>
+                    ¡Y cómo todos los festivales, no faltarán musica, fiesta, y otras actividades corporales y artísticas!
+                </p>
+                <p>
+                    3 días para disfrutar, aprender, conectar con el ecosistema medioambiental de Barcelona y más allá.
+                </p>
+                <p>
+                    Reserva las fechas de los 14, 15 y 16 de noviembre! ¡No te quedes sin tu plaza!
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section class="activities">
+            <header id="murales">
+                <h2>Todas las actividades</h2>
+            </header>
+            El programa completo todavía está por definir... No dudes en volver a mirarlo más tarde si no encuentras el taller que te gustaría hacer.
+            <aside class="mural-clima">
+                <figure>
+                    <img alt="El Mural del Clima" src="/images/logos/logo-mdc.png">
+                </figure>
+                <h3>El Mural del Clima</h3>
+                <p>
+                    En solo 3 horas, el taller colaborativo « El Mural del Clima » permite entender los conceptos básicos y
+                    los desafíos del cambio climático, para entrar en acción.
+                </p>
+            </aside>
+            <aside class="mural-nuevos-relatos">
+                <figure>
+                    <img alt="El Mural de los nuevos relatos" src="/images/logos/logo-nuevo-relatos.png">
+                </figure>
+                <h3>El Mural de los nuevos relatos</h3>
+                <p>
+                    Descubre a través de un juego de cartas colaborativo cuál es la influencia de las historias en nuestro
+                    cerebro y nuestro comportamiento.
+                </p>
+            </aside>
+            <aside class="mural-biodiversidad">
+                <figure>
+                    <img alt="Biodiversity Collage" src="/images/logos/logo-biodiv.png">
+                </figure>
+                <h3>Biodiversity Collage</h3>
+                <p>
+                    Descubre el aspecto sistémico de la pérdida de la biodiversidad a través de un taller lúdico y
+                    colaborativo: lo qué es la biodiversidad, lo qué permite y lo qué la degrada.
+                </p>
+            </aside>
+            <aside class="mural-digital">
+                <figure>
+                    <img alt="Mural de lo Digital" src="/images/logos/logo-digital.png">
+                </figure>
+                <h3>Mural de lo Digital</h3>
+                <p>
+                    El Mural del Digital es un taller lúdico y colaborativo. El objetivo del taller es
+                    sensibilizar y formar a los participantes sobre los problemas medioambientales de
+                    las tecnologías digitales.
+                </p>
+            </aside>
+            <aside class="taller-adacc">
+                <figure>
+                    <img alt="Adaptación al cambio climático" src="/images/logos/logo_adacc.svg">
+                </figure>
+                <h3>Adaptación al cambio climático</h3>
+                <p>
+                    El taller Adaptación al Cambio Climático se centra en la adaptación Propone una metodología para
+                    entender los componentes de un riesgo y proporciona las claves para elegir colectivamente
+                    las mejores opciones posibles y evitar la inadaptación
+                </p>
+            </aside>
+            <aside class="mural-oceano">
+                <figure>
+                    <img alt="El Mural del Océano" src="/images/logos/logo-oceane.webp">
+                </figure>
+                <h3>Ocean Collage</h3>
+                <p>
+                    El taller del Mural de Océano sensibiliza sobre los problemas que
+                    rodean al océano ( contaminación química y plástica,
+                    industrias marítimas y cambio climático) y el impacto de nuestras
+                    actividades en este ecosistema, y proporciona las claves para pasar
+                    a la acción
+                </p>
+            </aside>
+            <aside class="mural-limites-planetarios">
+                <figure>
+                    <img alt="El Mural de los Límites Planetarios" src="/images/logos/logo-boundaries.png">
+                </figure>
+                <h3>El Mural de los Límites Planetarios</h3>
+                <p>
+                    ¿Qué hace que nuestro planeta Tierra sea habitable? El clima, la biodiversidad, el ciclo del agua... Hay tantas cuestiones medioambientales que considerar que es fácil perderse. !Descubre las 9 fronteras planetarias, para cartografíar y relacionar los principales problemas ecológicos!
+                </p>
+            </aside>
+            <aside class="los-maravillosos-2030">
+                <figure>
+                    <img alt="Los Maravillosos 2030" src="/images/logos/logo-2030.png">
+                </figure>
+                <h3>Los Maravillosos 2030</h3>
+                <p>
+                    Un taller sobre viajar a los 2030 maravillosos para salir de las distopías angustiantes y atrevernos a soñar con un mundo mejor.
+                    Durante 2 horas y media, nos sumergiremos en un 2030 glorioso de profundas transformaciones en nuestra sociedad.
+                </p>
+            </aside>
+            <aside class="taller-invbc">
+                <figure>
+                    <img alt="Inventemos Nuestras Vidas Sostenibles" src="/images/logos/logo-invbc.png">
+                </figure>
+                <h3>Inventemos Nuestras Vidas Sostenibles (INVBC)</h3>
+                <p>
+                    Un taller divertido y educativo de 2 horas diseñado para ayudar a los niños a partir de
+                    9 años a diseñar vidas bajas en carbono deseables, sin hacerles sentir culpables, al
+                    tiempo que identifican acciones necesarias, eficaces e inspiradoras.
+                </p>
+            </aside>
+            <aside class="taller-2toneladas">
+                <figure>
+                    <img alt="2tonnes" src="/images/logos/logo-2T.webp">
+                </figure>
+                <h3>2toneladas</h3>
+                <p>
+                    A partir de tu huella de carbono personal y a lo largo del taller, te invitaremos a tomar
+                    decisiones (transporte, alimentación, vivienda, implicación ciudadana…) que tendrán impacto
+                    sobre tu huella de carbono y la del mundo para alcanzar este objetivo de 2 toneladas.
+                </p>
+            </aside>
+            <aside class="mural-suelo">
+                <figure>
+                    <img alt="Mural del Suelo" src="/images/logos/logo-suelo.jpg">
+                </figure>
+                <h3>Mural del Suelo</h3>
+                <p>
+                    Mural para descubrir nuestros suelos, unos ecosistemas vitales para nuestras sociedades,
+                    y fundamentales para crear futuros deseables. ¿Qué es un suelo? ¿Cómo funciona?
+                    ¿Qué funciones y servicios provee? El Mural genera un lenguaje común para empoderarse y
+                    poder preservar los suelos.
+                </p>
+            </aside>
+            <aside class="mural-textil">
+                <figure>
+                    <img alt="Mural del Textil" src="/images/logos/logo-textile.jpg">
+                </figure>
+                <h3>Mural del Textil</h3>
+                <p>
+                    Taller colaborativo para entender los impactos sociales y ambientales del sector textil.
+                </p>
+            </aside>
+            <aside class="creating-psychological-safety">
+                <figure class="bg-dark">
+                    <img alt="An introduction to creating psychological safety" src="/images/logos/logo-psycho.png">
+                </figure>
+                <h3>An introduction to creating psychological safety</h3>
+                <p>
+                    Learn to cultivate a fearless work environment through psychological safety,
+                    enhancing communication, trust, and innovation.
+                </p>
+            </aside>
+            <aside class="sustainable-pathways">
+                <figure class="bg-dark">
+                    <img alt="Sustainable Pathways" src="/images/logos/logo-psycho.png">
+                </figure>
+                <h3>Sustainable Pathways: The Game</h3>
+                <p>
+                    An interactive, team-based experience that inspires sustainable change,
+                    from boardroom to shop floor.
+                </p>
+            </aside>
+            <aside class="mural-movilidad">
+                <figure>
+                    <img alt="Mural de la movilidad" src="/images/logos/logo-mobility.jpg">
+                </figure>
+                <h3>Mural de la movilidad</h3>
+                <p>
+                    Mural dedicado a la descarbonización de la movilidad de las personas. Identificar
+                    necesidades de transporte, conocer las emisiones de los distintos medios de transporte
+                    y sus impactos ambientales, y finalmente explorar soluciones viables y prácticas para
+                    nuestras realidades cotidianas.
+                </p>
+            </aside>
+            <aside class="mural-construccion">
+                <figure>
+                    <img alt="Mural de la construcción" src="/images/logos/logo-construction.png">
+                </figure>
+                <h3>Mural de la construcción</h3>
+                <p>
+                    Abordar el reto de la sostenibilidad y de la descarbonización del sector de la construcción
+                    en equipo de forma efectiva y creativa. Explorar los impactos de la construcción para
+                    poder luego imaginar soluciones de futuro.
+                </p>
+            </aside>
+            <aside class="conscious-evolucion-collage">
+                <figure>
+                    <img alt="The Conscious Evolution Collage" src="/images/logos/logo-conscious.jpg">
+                </figure>
+                <h3>The Conscious Evolution Collage</h3>
+                <p>
+                    The Conscious Evolution Collage workshop brings to life how all these global
+                    issues are interconnected and explores the deeper psychological roots that are
+                    causing these issues. Join us for a 3-hour card game based around
+                    collective understanding and knowledge sharing.
+                </p>
+            </aside>
+            <aside class="mural-economia-circular">
+                <figure>
+                    <img alt="El Mural de la Economía Circular" src="/images/logos/logo-circular.jpg">
+                </figure>
+                <h3>El Mural de la Economía Circular</h3>
+                <p>
+                    El Mural de la Economía Circular es un taller colaborativo que analiza nuestro modelo
+                    económico (lineal) actual, sus impactos e invita a explorar un modelo circular diferente,
+                    que utiliza menos recursos, diseña sin crear desperdicios y respeta los límites de nuestro
+                    planeta.
+                </p>
+            </aside>
+            <aside class="calendario-negociado">
+                <figure>
+                    <img alt="Calendario negociado" src="/images/logos/logo-calendario.png">
+                </figure>
+                <h3>Calendario negociado</h3>
+                <p>
+                    ¿Qué pasaría si del día al otro cambiamos de calendario? ¿Y qué pasaría si teníamos la posibilidad de elaborar
+                    nuestro propio calendario? ¿Con que criterios lo haríamos? Y al adoptar este nuevo calendario, ¿que cambiaría en nuestro día a día?
+                    El Calendario negociado es un taller en el cual los participantes van a elaborar su propio calendario.
+                </p>
+            </aside>
+            <aside class="mural-agri-alim">
+                <figure style="background-color: #11876f">
+                    <img alt="El Mural Agri&apos;Alim" src="/images/logos/logo-agrialim.jpg">
+                </figure>
+                <h3>El Mural Agri&apos;Alim</h3>
+                <p>
+                    Un taller participativo de 3 horas para comprender colectivamente los retos a los que se
+                    enfrenta el sistema agri-alimentario y debatir cómo abordarlos.
+                </p>
+            </aside>
+            <aside class="make-it-awkward">
+                <figure>
+                    <img alt="Make It Awkward Desafía el Momento creando incomodidad" src="/images/logos/logo-makeitawkward.png">
+                </figure>
+                <h3>Make It Awkward<br>Desafía el Momento creando incomodidad</h3>
+                <p>
+                    En este taller colaborativo, los participantes aprenderán a reaccionar ante comportamientos y
+                    comentarios inapropiados, creando una situación incómoda de manera amable. Por ejemplo,
+                    compartiendo su propio punto de vista, expresando sus valores, estableciendo límites
+                    personales o invitando al orador a reconsiderar su posición.
+                </p>
+            </aside>
+            <aside class="mural-finanzas">
+                <figure>
+                    <img alt="El Mural de las Finanzas" src="/images/logos/logo-finanza.png">
+                </figure>
+                <h3>El Mural de las Finanzas</h3>
+                <p>
+                    La misión del Mural de las Finanzas es sensibilizar a la población sobre el papel de las finanzas en la transición socioecológica y fomentar la reflexión sobre las palancas de acción, según su escala y nivel inicial de conocimientos, y a escala colectiva.
+                </p>
+            </aside>
+            <aside class="taller-suelos-vivos">
+                <figure>
+                    <img alt="El Taller de los Suelos Vivos" src="/images/logos/logo-livingsoils.png">
+                </figure>
+                <h3>El Taller de los Suelos Vivos</h3>
+                <p>
+                    Hace muy poco que se ha puesto de relieve el papel fundamental del suelo en el equilibrio de los ecosistemas. Es la interfaz viva entre las plantas y los minerales, hogar de una cuarta parte de la biodiversidad conocida y refugio de vida responsable de múltiples funciones vitales. ¿Listo para sumergirte?
+                </p>
+            </aside>
+            <aside class="taller-agua">
+                <figure>
+                    <img alt="El Mural del Agua" src="/images/logos/logo-agua.png">
+                </figure>
+                <h3>El Mural del Agua</h3>
+                <p>
+                    Hace muy poco que se ha puesto de relieve el papel fundamental del suelo en el equilibrio de los ecosistemas. Es la interfaz viva entre las plantas y los minerales, hogar de una cuarta parte de la biodiversidad conocida y refugio de vida responsable de múltiples funciones vitales. ¿Listo para sumergirte?
+                </p>
+            </aside>
+        </section>
 
-        <article>
-            <img alt="Logo de Apocapoc" src="/images/apocapoc-logo.png">
-            <h3>Acerca de ApocApoc</h3>
+        <section class="kids">
+            <header>
+                <h2>Para niños</h2>
+            </header>
             <p>
-                Apocapoc Nest City Lab es un laboratorio de cultura que promueve hábitos regenerativos y prácticas
-                sostenibles. El Nest City Lab facilita un estilo de vida que reduce nuestra huella ecológica en el día a
-                día y nos anima a tener un impacto positivo en el mundo.
+                El evento contará con un <strong>espacio infantil</strong> dónde los niños podrán divertirse bajo la responsabilidad de sus padres o acompañantes. También proponemos unos talleres para familias y niños. 
             </p>
-            <p>
-                Apocapoc Nest City Lab apoya al Mural Fest por el segundo año ya y acoge a la comunidad de facilitadores
-                de talleres medioambientales de Barcelona y alrededores a lo largo del año.
-            </p>
-            <p>
-                @apocapocbcn #nestcitylab
-            </p>
-        </article>
-    </section>
-    <hr>
-    <section class="split-section">
-        <figure>
-            <img alt="Logo del Mural del Clima" src="/images/logos/logo-mdc-hand.png">
-        </figure>
+            <aside class="taller-titeres">
+                <figure>
+                    <img alt="Cuando los objetos cobran vida" src="images/photo-titeres.jpg">
+                </figure>
+                <h3>Cuando los objetos cobran vida</h3>
+                <p class="subtitle">Taller familiar - a partir de 6 años</p>
+                <p>
+                    ¿Y si... rescatamos objetos que podrían terminar en la basura para crear una marioneta? Ven  a crear y a manipular en colectivo tu propia marioneta reciclada.
+                </p>
+            </aside>
+        </section>
+    </main>
+    <hr class="art-separator">
+    <main>
+        <hr id="donde">
+        <section class="split-section">
+            <div id="map" class="map-container"></div>
 
-        <article>
-            <h3>Acerca del Mural del Clima</h3>
-            <p>
-                El Mural del Clima es un taller científico, colaborativo y creativo, pensado para sensibilizar, de
-                manera lúdica, sobre el cambio climático.
-            </p>
-            <p>
-                Con rigor y pedagogía este juego permite descubrir en poco tiempo el funcionamiento del clima, así como
-                las causas y consecuencias de su desajuste.
-            </p>
-            <p>
-                Al participar en el taller, las participantes toman conciencia de la complejidad del cambio climático.
-                Se les proporciona una visión del conjunto de esta amplia problemática y se les provee las claves para
-                comprender cómo actuar de manera eficaz.
-            </p>
-            <p>
-                Además de aportar conocimiento científico, el Mural del Clima estimula la creatividad y las competencias
-                humanas de los participantes.
-            </p>
-            <p>
-                El Mural del Clima está respaldado por una asociación constituida en 2018 que apoya a una comunidad de
-                más de 84.000 facilitadores que han acompañado a más de 1,8 millones de participantes en todo el mundo.
-            </p>
-            <p>
-                Es el segundo año consecutivo que la asociación El Mural del Clima ayuda la comunidad de España para que
-                exista el Mural Fest.
-            </p>
-        </article>
-    </section>
-    <hr>
-    <section class="split-section">
-        <figure>
-            <img alt="Foto del equipo organizador 2023" src="/images/team.jpg">
-        </figure>
+            <article>
+                <h2>¿Dónde se hace?</h2>
+                <address>
+                    Nest City Lab<br>
+                    Carrer d'Àlaba 100,<br>
+                    08018 
+                    Barcelona
+                </address>
+                <p>
+                    Metro L4 Bogatell - L1 Marina
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section class="split-section">
+            <figure>
+                <img alt="Foto de Apocapoc" src="/images/apocapoc.jpg">
+            </figure>
 
-        <article>
-            <h3>Acerca del grupo organizador</h3>
-            <p>
-                Detrás de este evento somos facilitadores voluntarios de varios talleres medioambientales
-                y sociales apasionados por la transmisión de estas temáticas. Somos facilitadores
-                formados y certificados para cada taller que ofrecemos. Nuestra comunidad organiza
-                talleres en toda España y en línea para aportar conocimientos relacionados a los retos
-                ambientales y sociales a más gente posible, pasándola bien, y empoderarla a actuar
-                hacia un mundo más justo y sostenible.
-            </p>
-        </article>
-    </section>
-</main>
-<footer>
-    <section>
-        <aside>
-            <h3>
-                Contact
-            </h3>
-            <p>
-                <a href="mailto:hola@muralfest.es">hola@muralfest.es</a>
-            </p>
-        </aside>
-        <aside>
-            <h3>
-                Síguenos
-            </h3>
-            <p>
-                <a href="https://www.instagram.com/muralfest_es/" class="link-icon">
-                    <img alt="instagram" src="/images/instagram.svg" height="25">
-                    @muralfest_es
-                </a>
-            </p>
-        </aside>
-        <aside>
+            <article>
+                <img alt="Logo de Apocapoc" src="/images/apocapoc-logo.png">
+                <h3>Acerca de ApocApoc</h3>
+                <p>
+                    Apocapoc Nest City Lab es un laboratorio de cultura que promueve hábitos regenerativos y prácticas
+                    sostenibles. El Nest City Lab facilita un estilo de vida que reduce nuestra huella ecológica en el día a
+                    día y nos anima a tener un impacto positivo en el mundo.
+                </p>
+                <p>
+                    Apocapoc Nest City Lab apoya al Mural Fest por el segundo año ya y acoge a la comunidad de facilitadores
+                    de talleres medioambientales de Barcelona y alrededores a lo largo del año.
+                </p>
+                <p>
+                    @apocapocbcn #nestcitylab
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section class="split-section">
+            <figure>
+                <img alt="Logo del Mural del Clima" src="/images/logos/logo-mdc-hand.png">
+            </figure>
 
-        </aside>
-    </section>
-</footer>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossorigin=""></script>
-<script src="index.js"></script>
-<script>
-    if (startTime()) {
-        document.getElementById("counter-before").innerHTML = "Empezamos en ";
-    }
-</script>
+            <article>
+                <h3>Acerca del Mural del Clima</h3>
+                <p>
+                    El Mural del Clima es un taller científico, colaborativo y creativo, pensado para sensibilizar, de
+                    manera lúdica, sobre el cambio climático.
+                </p>
+                <p>
+                    Con rigor y pedagogía este juego permite descubrir en poco tiempo el funcionamiento del clima, así como
+                    las causas y consecuencias de su desajuste.
+                </p>
+                <p>
+                    Al participar en el taller, las participantes toman conciencia de la complejidad del cambio climático.
+                    Se les proporciona una visión del conjunto de esta amplia problemática y se les provee las claves para
+                    comprender cómo actuar de manera eficaz.
+                </p>
+                <p>
+                    Además de aportar conocimiento científico, el Mural del Clima estimula la creatividad y las competencias
+                    humanas de los participantes.
+                </p>
+                <p>
+                    El Mural del Clima está respaldado por una asociación constituida en 2018 que apoya a una comunidad de
+                    más de 84.000 facilitadores que han acompañado a más de 1,8 millones de participantes en todo el mundo.
+                </p>
+                <p>
+                    Es el segundo año consecutivo que la asociación El Mural del Clima ayuda la comunidad de España para que
+                    exista el Mural Fest.
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section class="split-section">
+            <figure>
+                <img alt="Foto del equipo organizador 2023" src="/images/team.jpg">
+            </figure>
+
+            <article>
+                <h3>Acerca del grupo organizador</h3>
+                <p>
+                    Detrás de este evento somos facilitadores voluntarios de varios talleres medioambientales
+                    y sociales apasionados por la transmisión de estas temáticas. Somos facilitadores
+                    formados y certificados para cada taller que ofrecemos. Nuestra comunidad organiza
+                    talleres en toda España y en línea para aportar conocimientos relacionados a los retos
+                    ambientales y sociales a más gente posible, pasándola bien, y empoderarla a actuar
+                    hacia un mundo más justo y sostenible.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <aside>
+                <h3>
+                    Contact
+                </h3>
+                <p>
+                    <a href="mailto:hola@muralfest.es">hola@muralfest.es</a>
+                </p>
+            </aside>
+            <aside>
+                <h3>
+                    Síguenos
+                </h3>
+                <p>
+                    <a href="https://www.instagram.com/muralfest_es/" class="link-icon">
+                        <img alt="instagram" src="/images/instagram.svg" height="25">
+                        @muralfest_es
+                    </a>
+                </p>
+            </aside>
+            <aside>
+
+            </aside>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="index.js"></script>
+    <script>
+        if (startTime()) {
+            document.getElementById("counter-before").innerHTML = "Empezamos en ";
+        }
+    </script>
 </body>
 </html>
