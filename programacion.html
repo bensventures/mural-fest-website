@@ -193,12 +193,10 @@
         var url = 'https://docs.google.com/spreadsheets/d/'+id+'/gviz/tq?tqx=out:json&tq&gid='+gid;
         fetch(url)
           .then(response => response.text())
-          .then(data => document.getElementById("lineup").innerHTML=myItems(data.substring(47).slice(0, -2))  
+          .then(data => fillLineup(data.substring(47).slice(0, -2))  
           );
 
-        myItems(JSON.stringify(jsonString));
-
-        function myItems(jsonString){
+        function fillLineup(jsonString){
             var json = JSON.parse(jsonString);
             var ptime = '';
 
@@ -225,11 +223,13 @@
                     }
 
                     contents = contents 
-                    + `<div class="lineup-feature"><div class="img-container">` + _img + `</div>`
-                    + `<div class="description">`
+                    + `<div class="lineup-feature">`
+                    + `<div class="img-container">`
+                    +  (pict != "" ? `<img src="images/logos/` + pict + `">` : ``)
+                    + `</div><div class="description">`
                     + `<h4>` + name + `</h4>`
-                    + (lang != ""? `<p>Idioma: `+ lang + `</p>` : ``)
-                    + (durt != ""? `<p>Duración: ` + durt + `</p>` : ``)
+                    + (lang != "" && lang != null ? `<p>Idioma: `+ lang + `</p>` : ``)
+                    + (durt != "" && durt != null ? `<p>Duración: ` + durt + `</p>` : ``)
                     + `</div></div>`;
                 }
 
