@@ -515,6 +515,10 @@ li:focus > ul {
 {
 }
 
+.gallery img {
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     .gallery {
         display: grid;
