@@ -121,6 +121,10 @@ section aside figure img {
     color: var(--color-text);
 }
 
+p {
+    text-align: justify;
+}
+
 .banner h1 {
     color: #ececec;
     font-weight: 900;
@@ -161,8 +165,8 @@ section aside figure img {
     background: url('/images/art-2.svg') no-repeat -50px -50px;
     background-size: 700px 700px;
     overflow: visible;
-    padding: 100px 0 200px 200px;
-    margin: -100px 0 -200px -200px;
+    padding: 100px 0 100px 200px;
+    margin: -100px 0 0 -200px;
 }
 
 .presentation + hr {
@@ -416,6 +420,7 @@ main {
     width: 100%;
     height: 300px;
 }
+}
 
 footer {
     max-width: none;
@@ -459,25 +464,33 @@ footer a, footer a:visited {
 
 @media (max-width: 768px) {
   /* prevent the nav menu to wrap below the logo */ 
-  nav {
-    flex-wrap: nowrap !important;
-  }
+    nav {
+        flex-wrap: nowrap !important;
+    }
 
-  /* hide expandable menu */
-  li:not(:focus-within) > ul{
+    /* hide expandable menu */
+    li:not(:focus-within) > ul{
       display:none !important;
-  }
-  nav ul li ul {
-    position: absolute;
-  }
+    }
+    nav ul li ul {
+        position: absolute;
+    }
+    .onecolumn-section img {
+        margin: auto;
+        width: 70%;
+    }
 }
 
 @media (min-width: 768px) {
-  /* position expandable menu (language selection) on right border to keep it inside the window */
-  nav ul li ul {
-    left: auto !important;
-    right: 0 !important;
-  }
+    /* position expandable menu (language selection) on right border to keep it inside the window */
+    nav ul li ul {
+        left: auto !important;
+        right: 0 !important;
+    }
+    .onecolumn-section img {
+        margin: auto;
+        width: 40%;
+    }
 }
 
 /* expand menu on focus (on only on hover for touch screens) */
@@ -529,7 +542,7 @@ li:focus > ul {
 }
 img {
 /*    width: 100%;*/
-    display: block
+display: block
 }
 .caption {
     width: 100%;
