@@ -125,6 +125,10 @@ p {
     text-align: justify;
 }
 
+aside p {
+    text-align: left;
+}
+
 .banner h1 {
     color: #ececec;
     font-weight: 900;
@@ -513,6 +517,7 @@ li:focus > ul {
   display: none !important;
 }
 
+.community-boost,
 .make-it-awkward, 
 .mural-biodiversidad,
 .mural-clima, 
