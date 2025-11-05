@@ -424,11 +424,11 @@ main {
     width: 100%;
     height: 300px;
 }
-}
+
 
 footer {
     max-width: none;
-    background: #009393;
+    background: #009393 !important;
 }
 
 footer section aside, footer section aside:hover {
@@ -468,21 +468,21 @@ footer a, footer a:visited {
 
 @media (max-width: 768px) {
   /* prevent the nav menu to wrap below the logo */ 
-    nav {
-        flex-wrap: nowrap !important;
-    }
+  nav {
+    flex-wrap: nowrap !important;
+}
 
-    /* hide expandable menu */
-    li:not(:focus-within) > ul{
-      display:none !important;
-    }
-    nav ul li ul {
-        position: absolute;
-    }
-    .onecolumn-section img {
-        margin: auto;
-        width: 70%;
-    }
+/* hide expandable menu */
+li:not(:focus-within) > ul{
+  display:none !important;
+}
+nav ul li ul {
+    position: absolute;
+}
+.onecolumn-section img {
+    margin: auto;
+    width: 70%;
+}
 }
 
 @media (min-width: 768px) {
