@@ -464,25 +464,33 @@ footer a, footer a:visited {
     }
 }
 
-
+.onecolumn-section figure img {
+    width: 100%;
+}
 
 @media (max-width: 768px) {
   /* prevent the nav menu to wrap below the logo */ 
-  nav {
-    flex-wrap: nowrap !important;
-}
+    nav {
+        flex-wrap: nowrap !important;
+    }
 
-/* hide expandable menu */
-li:not(:focus-within) > ul{
-  display:none !important;
-}
-nav ul li ul {
-    position: absolute;
-}
-.onecolumn-section img {
-    margin: auto;
-    width: 70%;
-}
+    /* hide expandable menu */
+    li:not(:focus-within) > ul{
+        display:none !important;
+    }
+    nav ul li ul {
+        position: absolute;
+    }
+    .onecolumn-section img {
+        margin: auto;
+        width: 70%;
+    }
+    h2 {
+        text-align:center;
+    }
+    .presentation {
+        padding-bottom: 10px;
+    }
 }
 
 @media (min-width: 768px) {
