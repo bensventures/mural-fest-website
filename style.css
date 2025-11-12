@@ -438,7 +438,7 @@ footer section aside, footer section aside:hover {
 }
 
 footer a, footer a:visited {
-    color: var(--color-text);
+    color: white;
     text-decoration: none;
 }
 
